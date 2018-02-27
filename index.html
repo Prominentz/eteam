@@ -1,0 +1,659 @@
+<!--Embarc Studio 2017
+  Development + Design : Ralph Perricelli-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Embarc Studio | Team
+    </title>
+    <!--Import style sheets
+      THEY WILL BE INLINE-->
+    <!--Import Fonts + Assets
+      1. Name (Futura Bold)
+      2. Position (Futura reg)
+      3. Body Text Font (Futura reg)
+
+      Color = 46% opacity #000-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href=
+      "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity=
+      "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous" type="text/css" />
+    <style type="text/css">
+      h1 {
+      font-family: Futura;
+      font-size: 23px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 300;
+      line-height: 23px;
+      }
+      h2 {
+      font-family: Futura;
+      font-size: 23px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 300;
+      line-height: 23px;
+      }
+      h3 {
+      font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+      font-size: 17px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 100;
+      line-height: 23px;
+      }
+      p {
+      font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 100;
+      line-height: 23px;
+      }
+
+      body {
+      overflow-x: hidden;
+      }
+      /*Main container for team page*/
+      #container {
+      width: 100%;
+      height: 100vh;
+      padding-left: 10%;
+      background: #111;
+      overflow-x: hidden;
+      }
+      #imgContain img {
+      margin-bottom: 10px;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      filter: grayscale(100%);
+      border: 1px solid #222;
+      }
+      #imgContain img:hover {
+      margin-bottom: 10px;
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      filter: grayscale(0%);
+      transition: all 0.7s ease;
+      border: 1px solid #222;
+      }
+      #imgContain img:active {
+      margin-bottom: 10px;
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      filter: grayscale(0%);
+      border: 1px solid #222;
+      }
+      .row {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      }
+      /*Column 1 for txt, fixed position nonscrollable*/
+      #textContain {
+      height: 100%;
+      color: #ccc;
+      margin-top: 10%;
+      margin-left: 5%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      }
+      /*Column 2 for Images, scrollable, takes up 2/3 container*/
+      #imgContain {
+      height: 85vh;
+      margin-top: 10px;
+      margin-left: 0px;
+      padding-left: 7%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      color: #ccc;
+      }
+      /*id selectors for swap based on image/team member*/
+      #anH1tag {} #anH2tag {}
+      #anH3tag {padding-top: 2%;}
+      #anH4tag {padding-top: 2%;}
+      #anH5tag {padding-top: 2%;}
+
+      p.section {
+      border-bottom: 0.5px solid #ccc;
+      width: 65%;
+      line-height: 0.1em;
+      margin-left: 5px;
+      }
+      p span {
+      background: #111;
+      padding: 0 10px;
+      }
+      ::-webkit-scrollbar {
+      width: 0px;
+      /* remove scrollbar space */
+      background: #fff;
+      /* optional: just make scrollbar invisible */
+      }
+
+      @media (max-width: 767px) {
+    .col-sm-4 {
+        min-height: 25%;
+        height: 33.333%;
+    }
+}
+    </style>
+  </head>
+  <body scroll="no" style="overflow: hidden">
+    <!-- Page content -->
+    <div id="container" scroll="no" style="overflow: hidden">
+      <!-- First Column for text -->
+      <div class="col-sm-4" height="35vh">
+        <div id="textContain">
+          <h3 id="anH1tag">
+            Team
+          </h3>
+          <h3 id="anH2tag">
+
+          </h3>
+          <p id="anH3tag">
+
+          </p>
+          <p id="anH4tag">
+
+          </p>
+          <p id="anH5tag">
+
+          </p>
+        </div>
+      </div>
+      <!-- END First Column-->
+      <!-- 2nd Column for images -->
+      <div class="col-sm-8">
+        <div id="imgContain">
+
+          <!--Section Rule-->
+          <div class="row" style="padding-bottom:1%; padding-top:7.5%;">
+            <p class="section">
+              <span>Architecture</span>
+            </p>
+          </div>
+          <!--End Section Rule-->
+
+          <!--ARCHITECTURE SECTION ONE-->
+          <div class="row">
+            <!-- 1 Lrg Image-->
+            <div class="col-md-4">
+              <img class="img-responsive"
+                src="http://i64.tinypic.com/6sc403.jpg"
+                alt="Responsive image"
+                onclick="changeTxt('Dartagnan Brown','anH1tag');
+                changeTxt('| Principal','anH2tag');
+                changeTxt('Dartagnan has significant project design experience across a multitude of project sizes and types, ranging from an expertise in brownstone renovations, to new ground-up residential complexes, through to restaurant and retail developments.','anH3tag');
+                changeTxt('He plays an important role managing a majority of the projects through the Boston Approval process, from working closely with the Boston Planning and Development Authority, various neighborhood groups, city councilors and Zoning Board of Appeals.','anH4tag');
+                changeTxt('Dartagnan enjoys working directly with clients and end-users to create thoughtful designs which have culminated in very successful projects and relationships. Having the fortune of spending his formative years overseas, Dartagnan brings to the table a unique and insightful approach to design and architecture.','anH5tag');" />
+            </div>
+            <!--4 Small img-->
+            <div class="col-sm-2">
+                <img class="img-responsive"
+                  src="http://i64.tinypic.com/263ezkh.jpg"
+                  onclick="changeTxt('Dan Artiges','anH1tag');
+                  changeTxt('| Associate','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />
+
+                  <img class="img-responsive"
+                    src="http://i65.tinypic.com/103evbn.jpg"
+                    onclick="changeTxt('Yu Zheng','anH1tag');
+                    changeTxt('| Designer','anH2tag');
+                    changeTxt('','anH3tag');
+                    changeTxt('','anH4tag');
+                    changeTxt('','anH5tag');" />
+            </div>
+
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i63.tinypic.com/2i3zpt.jpg"
+                onclick="changeTxt('Camilla Matho','anH1tag');
+                changeTxt('| Designer','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <img class="img-responsive"
+                  src="http://i68.tinypic.com/29ymkhu.jpg"
+                  onclick="changeTxt('Luke Adam Stevenson','anH1tag');
+                  changeTxt('| Designer','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />
+            </div>
+          </div>
+          <!--END Architecture ONE-->
+
+          <!--Architecture TWO-->
+          <div class="row">
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i67.tinypic.com/21jon6g.jpg"
+                onclick="changeTxt('Sarah Rinehart','anH1tag');
+                changeTxt('| Project Architect','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+                <img class="img-responsive"
+                  src="http://i68.tinypic.com/x38kev.jpg"
+                  onclick="changeTxt('Ryan Spragg','anH1tag');
+                  changeTxt('| Designer','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />
+            </div>
+
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i63.tinypic.com/fwq43b.jpg"
+                onclick="changeTxt('Michael Schanbacher','anH1tag');
+                changeTxt('| Architect','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <img class="img-responsive"
+                  src="http://i64.tinypic.com/2vwi8uc.jpg"
+                  onclick="changeTxt('John Mazzocchi','anH1tag');
+                  changeTxt('| Designer','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />
+                </div>
+            <div class="col-md-4" >
+              <img class="img-responsive"
+                src="http://i63.tinypic.com/301eu10.jpg"
+                alt="Responsive image"
+                onclick="changeTxt('Rob Del Savio','anH1tag');
+                changeTxt('| Principal','anH2tag');
+                changeTxt('A licensed architect with more than 20 years practicing, Rob has been involved in a myriad of project types including recreational facilities, commercial office building repositioning and multi-family residential developments ranging from twenty to two-hundred units.','anH3tag');
+                changeTxt('Rob enjoys the collaborative nature of the practice. Working closely with clients early on, he helps to identify the opportunities and constraints of each endeavor with a keen sensibility to the real estate challenges. He closely monitors the project’s development through design before spearheading the documentation process and execution.','anH4tag');
+                changeTxt('Rob graduated from Rensselaer Polytechnic Institute with degrees in Architecture and Building Sciences.','anH5tag');" />
+            </div>
+          </div>
+          <!--END Architecture TWO-->
+
+          <!--ARCHITECTURE THREE-->
+          <div class="row">
+            <!-- 1 Lrg Image-->
+            <div class="col-md-4">
+              <img class="img-responsive"
+                src="http://i65.tinypic.com/szfvjm.jpg"
+                alt="Responsive image"
+                onclick="changeTxt('Cindy Lee','anH1tag');
+                changeTxt('| Senior Associate','anH2tag');
+                changeTxt('As a licensed architect with 20 years of experience, Cindy has worked on a wide range of projects including multi-family housing developments, corporate interiors and recreational facilities. Her focus on sustainable design has led to projects achieving Platinum and Gold certification under the USGBC’s LEED program.','anH3tag');
+                changeTxt('Cindy received her Masters of Architecture from the Massachusetts Institute of Technology and her Bachelor of Arts from Wellesley College. She is a proud graduate of the Boston Latin School.','anH4tag');
+                changeTxt('When she’s not doodling in Revit, you can find her honing her negotiation skills with her two kids. Having grown up in a 500 sq. ft. apartment in Chinatown, she is obsessed with small house plans.','anH5tag');" />
+            </div>
+            <!--4 Small img-->
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i68.tinypic.com/6h42rs.jpg"
+                onclick="changeTxt('Vichitta Srisouraj','anH1tag');
+                changeTxt('| Designer','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <img class="img-responsive"
+                  src="http://i65.tinypic.com/2m2f987.jpg"
+                  onclick="changeTxt('Steve Egan','anH1tag');
+                  changeTxt('| Designer','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />
+            </div>
+
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i67.tinypic.com/2r2y63m.jpg"
+                onclick="changeTxt('Tim Loranger','anH1tag');
+                changeTxt('| Designer','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <img class="img-responsive"
+                  src="http://i63.tinypic.com/vxrf6.jpg"
+                  onclick="changeTxt('Vien Nyugen','anH1tag');
+                  changeTxt('| Designer','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />
+            </div>
+          </div>
+          <!--END Architecture THREE-->
+
+          <!--Architecture FOUR-->
+          <div class="row">
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i64.tinypic.com/zix0qt.jpg"
+                onclick="changeTxt('Mark Van Brocklin','anH1tag');
+                changeTxt('| Project Architect','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+                <img class="img-responsive"
+                  src="http://i68.tinypic.com/oiub60.jpg"
+                  onclick="changeTxt('Kamilla Widulinski','anH1tag');
+                  changeTxt('| Designer','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />
+            </div>
+
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i68.tinypic.com/213qfpi.jpg"
+                onclick="changeTxt('Katherine Bradley','anH1tag');
+                changeTxt('| Associate','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+                <img class="img-responsive"
+                  src="http://i68.tinypic.com/10p20qr.jpg"
+                  onclick="changeTxt('Katie Fielder','anH1tag');
+                  changeTxt('| Project Architect','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />
+                </div>
+            <div class="col-md-4" >
+              <img class="img-responsive"
+                src="http://i67.tinypic.com/2nb8xnn.jpg"
+                alt="Responsive image"
+                onclick="changeTxt('Ryan Noone','anH1tag');
+                changeTxt('| Senior Associate','anH2tag');
+                changeTxt('Ryan has spent the majority of his career working in the Boston area where he has been involved in all aspects of project planning and execution, working on a full range of projects from high profile commercial office space to restaurant design and multi-family residential. He is a graduate of Syracuse University’s School of Architecture where he received his professional degree which included a semester spent abroad studying architecture in Florence, Italy.','anH3tag');
+                changeTxt('Ryan enjoys most the collaborative nature of the industry and consistently seeks to achieve a harmony between form and function in design. Working directly with both clients and contractors, Ryan has a direct impact on the complete project delivery and ensures design intent is met down to the last detail.','anH4tag');
+                changeTxt('','anH5tag');" />
+            </div>
+          </div>
+          <!--END Architecture FOUR-->
+
+          <!--ARCHITECTURE FIVE-->
+          <div class="row">
+            <!-- 1 Lrg Image-->
+            <div class="col-md-4">
+              <img class="img-responsive"
+                src="http://i63.tinypic.com/348o6rn.jpg"
+                alt="Responsive image"
+                onclick="changeTxt('Bill Mensinger','anH1tag');
+                changeTxt('| Senior Associate','anH2tag');
+                changeTxt('Bill has spent the last 15 years designing buildings and outdoor play and learning areas for young children and has extensive experience with the complex design, regulatory, and construction processes inherent in creating cutting-edge children’s environments. Bill also brings a thorough knowledge of sustainable design and construction and has served as project architect on a number of LEED Gold and Platinum accredited projects.','anH3tag');
+                changeTxt('Bill is a registered architect in MA and NH and received a Bachelor’s of Architecture from Wentworth Institute of Technology and has spent several months studying Architecture and Urban Design at the Ecole’ de Architecture in Montpelier, France.','anH4tag');
+                changeTxt('Bill enjoys engaging closely with each client and brings a passion and knowledge for working out the smallest of details.','anH5tag');" />
+            </div>
+            <!--4 Small img-->
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i66.tinypic.com/oh5p93.jpg"
+                onclick="changeTxt('Amy Eisen','anH1tag');
+                changeTxt('| Designer','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <!--Blank Space
+                <img class="img-responsive"
+                  src="http://theactivephotographer.com/wp-content/uploads/2012/07/TAP_Ad_300x300.jpg"
+                  onclick="changeTxt('Rachel','anH1tag');
+                  changeTxt('Graphics','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />-->
+            </div>
+
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i66.tinypic.com/3097ewz.jpg"
+                onclick="changeTxt('Chris Colleti','anH1tag');
+                changeTxt('| Designer','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <!--Blank Space
+                <img class="img-responsive"
+                  src="http://theactivephotographer.com/wp-content/uploads/2012/07/TAP_Ad_300x300.jpg"
+                  onclick="changeTxt('Rachel','anH1tag');
+                  changeTxt('Graphics','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />-->
+            </div>
+          </div>
+          <!--END Architecture FIVE-->
+          <!--END ARCHITECTURE-->
+
+
+
+          <!--INTERIORS-->
+          <!--Section Rule-->
+          <div class="row" style="padding-bottom:2.5%; padding-top:2.5%;">
+            <p class="section">
+              <span>Interiors</span>
+            </p>
+          </div>
+          <!--End Section Rule-->
+
+          <div class="row">
+            <div class="col-sm-2">
+
+              <!--Blank Space
+              <img class="img-responsive"
+                src="http://theactivephotographer.com/wp-content/uploads/2012/07/TAP_Ad_300x300.jpg"
+                onclick="changeTxt('Rachel','anH1tag');
+                changeTxt('Graphics','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+                <img class="img-responsive"
+                  src="http://theactivephotographer.com/wp-content/uploads/2012/07/TAP_Ad_300x300.jpg"
+                  onclick="changeTxt('Rachel','anH1tag');
+                  changeTxt('Graphics','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />-->
+            </div>
+
+            <div class="col-sm-2">
+
+
+              <img class="img-responsive"
+                src="http://i67.tinypic.com/1zqdo94.jpg"
+                onclick="changeTxt('Nicole Farkas','anH1tag');
+                changeTxt('| Interior Designer','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <!--Blank Space
+                <img class="img-responsive"
+                  src="http://theactivephotographer.com/wp-content/uploads/2012/07/TAP_Ad_300x300.jpg"
+                  onclick="changeTxt('Rachel','anH1tag');
+                  changeTxt('Graphics','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />-->
+                </div>
+            <div class="col-md-4" >
+              <img class="img-responsive"
+                src="http://i63.tinypic.com/2ms26x1.jpg"
+                alt="Responsive image"
+                onclick="changeTxt('Michelle Acosta','anH1tag');
+                changeTxt('| Lead Interior Designer','anH2tag');
+                changeTxt('Michelle received her Master of Interior Architecture from Boston Architectural College. She enjoys exploring the relationships between objects, people, and spaces and is captivated by the effect the built environment has on its users.','anH3tag');
+                changeTxt('With experience in a multiplicity of projects ranging from restaurant design, multi-family residential, and high-end residential, Michelle unceasingly embraces the stimulating task of creating inspired and innovative designs that are reinforced by effective space planning along with the scrupulous selection of furnishings, lighting, and materials.','anH4tag');
+                changeTxt('','anH5tag');" />
+            </div>
+          </div>
+          <!--END INTERIORS-->
+
+
+          <!--BRANDING + MARKETING-->
+          <!--Section Rule-->
+          <div class="row" style="padding-bottom:2.5%; padding-top:2.5%;">
+            <p class="section">
+              <span>Branding + Marketing</span>
+            </p>
+          </div>
+          <!--End Section Rule-->
+
+          <!--BRANDING + MARKETING-->
+          <div class="row">
+            <!-- 1 Lrg Image-->
+            <div class="col-md-4">
+              <img class="img-responsive"
+                src="http://i66.tinypic.com/359ikxz.jpg"
+                alt="Responsive image"
+                onclick="changeTxt('Ryan Berit-Parkes','anH1tag');
+                changeTxt('| Creative Director','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+            </div>
+            <!--4 Small img-->
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i66.tinypic.com/10cs1es.jpg"
+                onclick="changeTxt('Caroline Sanford','anH1tag');
+                changeTxt('| Lead Graphic Designer','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <img class="img-responsive"
+                  src="http://i64.tinypic.com/2zeikk2.jpg"
+                  onclick="changeTxt('Taylor McLelland','anH1tag');
+                  changeTxt('| Graphic Designer','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />
+            </div>
+
+            <div class="col-sm-2">
+              <img class="img-responsive"
+                src="http://i66.tinypic.com/2echgg0.jpg"
+                onclick="changeTxt('Ralph Perricelli','anH1tag');
+                changeTxt('| Web Developer + Graphic Designer','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <img class="img-responsive"
+                  src="http://i67.tinypic.com/29kygli.jpg"
+                  onclick="changeTxt('Rachel Bakish','anH1tag');
+                  changeTxt('| Graphic Designer','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />
+            </div>
+          </div>
+          <!--END BRANDING + MARKETING-->
+
+          <!--EXECUTIVE-->
+          <!--Section Rule-->
+          <div class="row" style="padding-bottom:2.5%; padding-top:2.5%;">
+            <p class="section">
+              <span>Executive</span>
+            </p>
+          </div>
+          <!--End Section Rule-->
+
+          <div class="row">
+            <div class="col-sm-2">
+
+              <img class="img-responsive"
+                src="http://i66.tinypic.com/287hfl4.jpg"
+                onclick="changeTxt('Leah Kyle','anH1tag');
+                changeTxt('| Finance','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <!--BLANK
+                <img class="img-responsive"
+                  src="http://theactivephotographer.com/wp-content/uploads/2012/07/TAP_Ad_300x300.jpg"
+                  onclick="changeTxt('Rachel','anH1tag');
+                  changeTxt('Graphics','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />-->
+            </div>
+
+            <div class="col-sm-2">
+
+
+              <img class="img-responsive"
+                src="http://i65.tinypic.com/far146.jpg"
+                onclick="changeTxt('Sarah Powers','anH1tag');
+                changeTxt('| Executive Assistant','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />
+
+                <!--Blank
+                <img class="img-responsive"
+                  src="http://theactivephotographer.com/wp-content/uploads/2012/07/TAP_Ad_300x300.jpg"
+                  onclick="changeTxt('Rachel','anH1tag');
+                  changeTxt('Graphics','anH2tag');
+                  changeTxt('','anH3tag');
+                  changeTxt('','anH4tag');
+                  changeTxt('','anH5tag');" />-->
+                </div>
+
+                <!--BLANK
+            <div class="col-md-4" >
+              <img class="img-responsive"
+                src="http://i63.tinypic.com/2ms26x1.jpg"
+                alt="Responsive image"
+                onclick="changeTxt('Michelle Acosta','anH1tag');
+                changeTxt('Lead Interior Designer','anH2tag');
+                changeTxt('','anH3tag');
+                changeTxt('','anH4tag');
+                changeTxt('','anH5tag');" />-->
+            </div>
+          </div>
+          <!--END EXECUTIVE-->
+
+          <!--END img contain-->
+        </div>
+        <!--end Col 2-->
+      </div>
+      <!--end container-->
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src=
+      "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity=
+      "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous" type="text/javascript"></script><!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous" type="text/javascript"></script><!--Team page script-->
+    <script type="text/javascript">
+      //<![CDATA[
+              function changeTxt(t, o) {
+                  var o = document.getElementById(o);
+                  o.innerHTML = t; //Will change the text within the H1 tag to whatever you supply in the first argument, 't'.
+              }
+          //]]>
+
+    </script>
+  </body>
+</html>
